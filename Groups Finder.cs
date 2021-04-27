@@ -137,15 +137,14 @@ char * CreateGroup()
             c++;
         }
     }
-
     return arr;
 }
 
 int main()
 {
     char* arr;
-    asize = 4;
-    //arr = new char[81] { '.', vars[3], '.', vars[7], '.', vars[4], vars[1], '.', '.', '.', vars[1], '.', '.', vars[3], '.', '.', vars[4], '.', vars[4], '.', '.', '.', '.', '.', '.', '.', vars[3], '.', vars[8], '.', '.', '.', vars[2], vars[0], vars[1], '.', vars[0], '.', vars[5], '.', vars[6], vars[7], '.', '.', vars[2], vars[2], vars[6], '.', vars[8], '.', vars[3], '.', vars[7], '.', '.', '.', '.', '.', '.', vars[5], vars[6], '.', '.', '.', '.', vars[7], vars[2], vars[4], vars[8], '.', vars[0], '.', '.', vars[0], vars[8], '.', '.', vars[6], vars[5], '.', '.' };
-    arr = CreateGroup();
+    asize = 9;
+    arr = new char[81] { '.', vars[3], '.', vars[7], '.', vars[4], vars[1], '.', '.', '.', vars[1], '.', '.', vars[3], '.', '.', vars[4], '.', vars[4], '.', '.', '.', '.', '.', '.', '.', vars[3], '.', vars[8], '.', '.', '.', vars[2], vars[0], vars[1], '.', vars[0], '.', vars[5], '.', vars[6], vars[7], '.', '.', vars[2], vars[2], vars[6], '.', vars[8], '.', vars[3], '.', vars[7], '.', '.', '.', '.', '.', '.', vars[5], vars[6], '.', '.', '.', '.', vars[7], vars[2], vars[4], vars[8], '.', vars[0], '.', '.', vars[0], vars[8], '.', '.', vars[6], vars[5], '.', '.' };
+    //arr = CreateGroup();
     Recurse(arr, 0);
 }
